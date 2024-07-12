@@ -1,0 +1,442 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img_logo {
+    width: 8%;
+    margin: 15px;
+}
+.content_home {
+    background-image: url("../img/home/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+
+}
+.icon_prize {
+    padding: 6px 7px;
+    width: 29px;
+}
+.circle_prize {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: white;
+}
+.text_prize {
+    color: white;
+    margin-top: 10px;
+    font-size: 10.9px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+.text_times{
+    color: white;
+    margin-top: 10px;
+    font-size: 10.9px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.button_icon {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    transform-origin: center; 
+}
+
+.button_icon:hover {
+    transform: scale(1.1); 
+    background-color: rgb(243, 239, 239);
+}
+.prize_content {
+    display: flex;
+    gap: 5px;
+    flex: 0 0 25%;
+    text-align: center;
+    transition: transform 8s ease; 
+}
+.content_header {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-left: 435px;
+    padding-top: 10px;
+    overflow: hidden;
+    width: 63%;
+
+}
+.line {
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin: 8px 6px;
+}
+.home_content {
+    display: flex;
+    width: 105%;
+    margin: 7px 24px;
+    animation: slide 8s linear infinite;
+}
+.home_content.slider {
+    animation: slide 8s linear infinite; 
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.button_icon {
+    width: 120px;
+    height: 110px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    
+}
+.img_list {
+    width: 53px;
+}
+.list_work {
+    display: flex;
+    gap: 10px;
+}
+.content_worklist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 78px;
+}
+.text_list {
+    color: rgb(50, 50, 50);
+    margin-top: 5px;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+}
+.home {
+    display: flex;
+}
+.birthday_images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.img_birthday {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+.birthday {
+    font-size: 18px;
+}
+.img_avt {
+    border-radius: 50%;
+    width: 30px;
+}
+.img_event {
+    width: 319px;
+    height: 271px;
+    border-radius: 7px;
+    border: 2px solid white;
+}
+.event_content {
+    /* margin: 43px 100px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.tilte_prize{
+    color: white;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.des_prize{
+    color: white;
+    width: 320px;
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+.img_fb {
+    width: 82%;
+    border-radius: 7px;
+    border: 2px solid white;
+}
+.birthdays_content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.tilte_prize1{
+    color: white;
+    font-size: 14px;
+    width: 83%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10px;
+}
+.img_event1{
+ 
+    height: 117px;
+    border-radius: 7px;
+    
+}
+.des_prize1{
+    color: white;
+    font-size: 10px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.event_img{
+    display: flex;
+    flex-direction: column;
+}
+.cont_event{
+    display: flex;
+}
+.content_event{
+    width: 40%;
+    padding:0 50px;
+}
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Popup content */
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.content_hpbd1{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%; 
+    height: 105%;
+    display: flex;
+    background-color: rgba(9, 13, 81, 0.8);
+}
+.img_hpbd1{
+    width: 100%; 
+    height: auto; 
+}
+.avt_content1{
+    position: absolute;
+    z-index: 3;
+    top: 52%; 
+    left: 48.5%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 39%;
+}
+.avt_img1{
+    width: 50%;
+    height: 270px;
+   border-radius: 10%;
+}
+.text_avt1{
+    position: absolute;
+    z-index: 5;
+    top: 74.5%; 
+    left: 33%;
+    transform: translate(-45%, -50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 35%;
+    font-size: 18px;
+    color: white;
+    transform: rotate(-3deg);
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.info1{
+    position: absolute;
+    z-index: 5;
+    top: 82%; 
+    left: 32.2%;
+    transform: translate(-45%, -50%); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 35%;
+    font-size: 18px;
+    color: white;
+    transform: rotate(-3deg);
+    font-size: 11px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Popup content */
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style for the new close button */
+#close-popup-btn {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#close-popup-btn:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 900px) {
+    .home{
+        display: block;
+    }
+    .img_logo{
+        width: 100px;
+    }
+    .content_home{
+        padding-bottom: 100px;
+    }
+    .content_header{
+        margin:0 auto;
+        width: 90%;
+    }
+    .img_event1{
+        width: 100%;
+        height:300px;
+    }
+    .content_worklist{
+        margin:0 auto;
+        margin-left: 0;
+    }
+    .event_content{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .img_event{
+        margin:0 auto;
+        width: 100%;
+        height: 280px;
+    }
+    .content_event{
+        width: 90%;
+        padding:0;
+        margin:0 auto;
+    }
+    .text_prize{
+        text-align: center;
+        margin-bottom:10px;
+        margin-top:10px
+    }
+  
+    .birthday_images{
+        margin:0 auto;
+    }
+    .img_fb{
+        margin:0 auto;
+    }
+    .text_times{
+        margin-bottom: 10px
+    }
+};
+  
