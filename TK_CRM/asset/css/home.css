@@ -4,17 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    overflow-y: hidden; /* Prevent vertical scrolling */
-}
 
 .content_home {
-    min-height: 100vh; /* Set minimum height to full viewport */
     background-image: url("../img/home/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    overflow-y: auto; /* Enable scrolling for content */
 }
 .header_content {
     display: flex;
@@ -24,7 +16,7 @@ body {
 }
 .img_logo {
     width: 5%;
-    margin: 15px;
+    margin: 10px;
 }
 .content_home {
     background-image: url("../img/home/background.jpg");
@@ -76,7 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-left: 435px;
+    margin-left: 580px;
     padding-top: 10px;
     overflow: hidden;
     width: 63%;
@@ -105,8 +97,8 @@ body {
     }
 }
 .button_icon {
-    width: 120px;
-    height: 110px;
+    width: 150px;
+    height: 130px;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -128,17 +120,21 @@ body {
     flex-direction: column;
     gap: 10px;
     padding-left: 78px;
+    margin-top: 30px;
 }
 .text_list {
     color: rgb(50, 50, 50);
     margin-top: 5px;
-    font-size: 10px;
+    font-size: 14px;
     font-family: "Poppins", sans-serif;
     font-weight: 550;
     font-style: normal;
 }
 .home {
     display: flex;
+    justify-content: center;
+    gap:80px;
+    width: 100%;
 }
 .birthday_images {
     display: flex;
@@ -160,8 +156,8 @@ body {
     width: 30px;
 }
 .img_event {
-    width: 374px;
-    height: 284px;
+    width: 345px;
+    height: 268px;
     border-radius: 7px;
     border: 2px solid white;
 }
@@ -189,7 +185,7 @@ body {
 }
 .des_prize {
     color: white;
-    width: 400px;
+    width: 350px;
     font-size: 15px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
@@ -217,7 +213,7 @@ body {
 
 
 .img_fb {
-    width: 82%;
+    width: 100%;
     border-radius: 7px;
     border: 2px solid white;
 }
@@ -236,7 +232,7 @@ body {
     margin-top: 10px;
 }
 .img_event1{
-    width: 70%;
+    width: 90%;
     border-radius: 7px;
     
 }
@@ -250,13 +246,15 @@ body {
 .event_img{
     display: flex;
     flex-direction: column;
+    
 }
 .cont_event{
     display: flex;
+    gap:20px
 }
 .content_event{
-    width: 52%;
-    padding:0 50px;
+    width: 40%;
+    padding:0 30px;
 }
 .popup {
     display: none; /* Hidden by default */
@@ -337,10 +335,9 @@ body {
     align-items: center;
     overflow: hidden;
     width: 35%;
-    font-size: 18px;
+    font-size: 25px;
     color: white;
     transform: rotate(-3deg);
-    font-size: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -359,10 +356,10 @@ body {
     align-items: center;
     overflow: hidden;
     width: 35%;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     transform: rotate(-3deg);
-    font-size: 11px;
+    /* font-size: 11px; */
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -411,14 +408,15 @@ body {
     z-index: 10;
     right: 0;
     display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
+    margin: 90px 10px;
+    padding: 20px 20px;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bolder;
+    font-size: 20px;
 }
 
 #close-popup-btn:hover {
