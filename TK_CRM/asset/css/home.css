@@ -34,6 +34,7 @@
     height: 27px;
     border-radius: 50%;
     background-color: white;
+    margin-top: 5px;
 }
 .text_prize {
     color: white;
@@ -45,7 +46,7 @@
 .text_times{
     color: white;
     margin-top: 10px;
-    font-size: 12.9px;
+    font-size: 14px;
 
 }
 .button_icon {
@@ -178,37 +179,35 @@
 }
 .tilte_prize{
     color: white;
-    font-size: 18px;
+    font-size: 23px;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-style: normal;
+    text-decoration: none;
+}
+.slick-dots{
+    display: none;
 }
 .des_prize {
     color: white;
-    width: 350px;
+    width: 400px;
     font-size: 15px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: justify;
-    max-height: 3.7em; /* Chiều cao tối đa của 3 dòng văn bản */
-    overflow-y: hidden; /* Ẩn thanh cuộn */
+    max-height: 4.5em; 
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    scroll-behavior: smooth; 
     position: relative;
-    padding-right: 1em; /* Để khoảng trống cho nội dung ẩn không bị cắt cụt */
+    padding-right: 1em; 
 }
 
-.des_prize:hover {
-    overflow-y: auto; /* Cho phép cuộn khi hover */
-}
-
-/* Ẩn thanh cuộn nhưng vẫn cho phép cuộn */
 .des_prize::-webkit-scrollbar {
     display: none;
-}
-
-.des_prize {
-    scrollbar-width: none; /* Ẩn thanh cuộn cho Firefox */
-    -ms-overflow-style: none; /* Ẩn thanh cuộn cho IE và Edge */
 }
 
 
@@ -224,21 +223,26 @@
 }
 .tilte_prize1{
     color: white;
-    font-size: 16.9px;
+    font-size: 19px;
     width: 91%;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-style: normal;
     margin-top: 10px;
+    text-decoration: none;
 }
 .img_event1{
-    width: 90%;
+    width: 99%;
     border-radius: 7px;
     
 }
+.event_content_left{
+    display: flex;
+    flex-direction: column;
+}
 .des_prize1{
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -246,14 +250,14 @@
 .event_img{
     display: flex;
     flex-direction: column;
-    
+    gap:5px
 }
 .cont_event{
     display: flex;
-    gap:20px
+    gap:20px;
 }
 .content_event{
-    width: 40%;
+    width: 41%;
     padding:0 30px;
 }
 .popup {
