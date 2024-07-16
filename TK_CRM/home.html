@@ -139,16 +139,29 @@
                     </div>
                 </div>
                 <div class="content_event">
-                    <div class="event_content">
-                        <div class="text_prize birthday">SỰ KIỆN SẮP TỚI</div>
-                        <img class="img_event" src="./asset/img/home/event.png" alt="">
-                        <div class="tilte_prize ">Cuộc thi ký ức Học Đường</div>
-                        <div class="text_prize ">Bảng Tin 2 Giờ Trước</div>
-                        <div class="des_prize ">Cuộc thì dành riêng cho nội bộ Hải Anh chào đón tháng Tri Ân - Học tập
-                            Sáng lao Khi đã trường thành, va vấp với cuộc sống, ta chợt nhận ra thời cắp sách đến trường
-                            chính là quãng thời gian hồn nhiên, vô lo vô nghĩ nhất.Vậy thì hãy đã KÝ ỨC HỌC ĐƯỜNG khơi
-                            gợi trong bạn những kỷ niệm xưa, cũng nhau trần trong quá khứ và trì ăn đến những người thấy
-                            cô trong học tập, trong cuộc sống</div>
+                    <div class="event_content_1">
+                        <div class="event_content_left">
+                            <div class="text_prize birthday">SỰ KIỆN SẮP TỚI</div>
+                            <img class="img_event" src="./asset/img/home/event.png" alt="">
+                            <div class="tilte_prize ">Cuộc thi ký ức Học Đường</div>
+                            <div class="text_prize ">Bảng Tin 2 Giờ Trước</div>
+                            <div class="des_prize ">Cuộc thì dành riêng cho nội bộ Hải Anh chào đón tháng Tri Ân - Học tập
+                                Sáng lao Khi đã trường thành, va vấp với cuộc sống, ta chợt nhận ra thời cắp sách đến trường
+                                chính là quãng thời gian hồn nhiên, vô lo vô nghĩ nhất.Vậy thì hãy đã KÝ ỨC HỌC ĐƯỜNG khơi
+                                gợi trong bạn những kỷ niệm xưa, cũng nhau trần trong quá khứ và trì ăn đến những người thấy
+                                cô trong học tập, trong cuộc sống</div>
+                        </div>
+                        <div class="event_content_left">
+                            <div class="text_prize birthday">SỰ KIỆN SẮP TỚI</div>
+                            <img class="img_event" src="./asset/img/home/event.png" alt="">
+                            <div class="tilte_prize ">Cuộc thi ký ức Học Đường</div>
+                            <div class="text_prize ">Bảng Tin 2 Giờ Trước</div>
+                            <div class="des_prize ">Cuộc thì dành riêng cho nội bộ Hải Anh chào đón tháng Tri Ân - Học tập
+                                Sáng lao Khi đã trường thành, va vấp với cuộc sống, ta chợt nhận ra thời cắp sách đến trường
+                                chính là quãng thời gian hồn nhiên, vô lo vô nghĩ nhất.Vậy thì hãy đã KÝ ỨC HỌC ĐƯỜNG khơi
+                                gợi trong bạn những kỷ niệm xưa, cũng nhau trần trong quá khứ và trì ăn đến những người thấy
+                                cô trong học tập, trong cuộc sống</div>
+                        </div>
                     </div>
 
                     <div class="event_content">
@@ -187,6 +200,7 @@
                             <div class="event_img">
                                 <img class="img_event1" src="./asset/img/home/event.png" alt="">
                                 <div class="tilte_prize1"><i></i>Cuộc thi ký ức Học Đường</div>
+                                <div class=" text_times"><i>Bảng Tin 2 Giờ Trước</i></div>
                                 <div class="des_prize1">Cuộc thì dành riêng cho nội bộ Hải</div>
                             </div>
                         </div>
@@ -268,7 +282,7 @@
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 8000,
                 dots: true,
                 arrows: true,
                 responsive: [
@@ -319,6 +333,16 @@ window.onclick = function(event) {
         popup.style.display = 'none';
     }
 }
+const desPrize = document.querySelector('.des_prize');
+
+desPrize.addEventListener('wheel', (event) => {
+    event.preventDefault();
+    desPrize.scrollBy({
+        top: event.deltaY,
+        behavior: 'smooth'
+    });
+});
+
 
 </script>
 
